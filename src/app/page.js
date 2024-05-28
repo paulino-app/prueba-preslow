@@ -63,7 +63,7 @@ export default function Home() {
     const response = await fetch(
       'https://localhost:4001/words?amount=10&language=Spanish&characters=letters'
     );
-    const data = await response.data;
+    const data = response.data;
 
     const { text } = data;
 
